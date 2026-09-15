@@ -1,32 +1,54 @@
-#Buat file dengan nama lainnya_2611532031.py
-#Nama variabel ditambah 4 digit nim terakhir contoh: angka1_2031
-#Program ini menggunakan fungsi input()
-#Program operator keanggotaan dan identitas
+print("======================")
+print(" 1. OPERATOR KEANGGOTAAN")
+print("======================")
 
-print("==========================================")
-print("1. OPERATOR KEANGGOTAAN")
-print("==========================================")
+# input beberapa data yang dipisahkan dengan koma
+input_data_2031 = input("masukkan beberapa angka, pisahkan dengan koma: ")
 
-#Input beberapa data yang dipisahkan dengan koma
-input_data = input("Masukkan beberapa angka, pisahkan dengan koma: ")
+# mengubah input menjadi list integer
+data_2031 = [int(angka.strip()) for angka in input_data_2031.split(",")]
 
-#Mengubah input menjadi list interger
-data = [int(angka.strp()) for angka in input_data.split(",")]
+nilai_dicari_2031 = int(input("masukkan angka yang ingin di cari: "))
 
-nilai_dicari = int(input("Masukkan angka yang ingin dicari: "))
+#operator in 
+hasil_2031 = nilai_dicari_2031 in data_2031 
+print("\n Operator keanggotaan IN")
+print(nilai_dicari_2031, "in", data_2031, "=", hasil_2031)
 
-#Operator in 
-hasil = nilai_dicari in data
-print 
-
-
-
+# operator not in 
+hasil_2031 = nilai_dicari_2031 not in data_2031 
+print("\n Operator keanggotaan NOT IN")
+print(nilai_dicari_2031, "not in", data_2031, "=", hasil_2031)
 
 
+print("\n===========================")
+print("2. OPERATOR IDENTITAS")
+print("===========================")
 
+# objek1 menggunakan list dari input pengguna 
+objek1_2031 = data_2031
 
+# objek2 merujuk pada objek yang sama dengan objek1
+objek2_2031 = objek1_2031 
 
+# objek3 memiliki isi sama, tetapi merupakan objek baru
+objek3_2031 = data_2031.copy()
 
-#Bitwise XOR
-hasil = angka1 ^ angka2
-print("\nBitwise XOR (^)")
+print("objek1_2031 =", objek1_2031)
+print("objek2_2031 =", objek2_2031)
+print("objek3_2031 =",objek3_2031)
+
+# operator is
+hasil_2031= objek1_2031 is objek2_2031
+print("\n Operator identitas IS")
+print("objek1_2031 is objek2_2031 =", hasil_2031)
+
+# operator is not
+hasil_2031 = objek1_2031 is objek3_2031
+print("\n Operator identitas IS NOT")
+print("objek1_2031 is not objek3_2031 =", hasil_2031)
+
+# membandingkan identitas dan nilai 
+print("\n membandingkan identitas dan nilai")
+print("objek1_2031 is objek3_2031: ", objek1_2031 is objek3_2031)
+print("objek1_2031 == objek3_2031: ", objek1_2031 == objek3_2031)
