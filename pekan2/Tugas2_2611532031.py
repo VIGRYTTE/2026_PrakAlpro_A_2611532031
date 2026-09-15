@@ -1,6 +1,4 @@
-#==========================================
 #SISTEM REGISTRASI PRAKTIKAN ALPRO 2026
-#==========================================
 
 #Konstanta
 BATAS_MINIMUM_NILAI = 75.0
@@ -24,9 +22,7 @@ id_token_2031 = complex(100, 3)
 #Boolean untuk menentukan kelulusan
 lulus_2031 = skor_tes_2031 >= BATAS_MINIMUM_NILAI
 
-#==========================================
 # MENAMPILKAN DATA PRAKTIKAN
-#==========================================
 
 print("\n=== DATA PRAKTIKAN & HASIL PEMERIKSAAN ===")
 
@@ -38,9 +34,7 @@ print("Umur :", umur_2031, "tahun | Tipe:", type(umur_2031))
 print("Skor Tes Awal :", skor_tes_2031, "| Tipe:", type(skor_tes_2031))
 print("ID Token Sinyal:", id_token_2031, "| Tipe:", type(id_token_2031))
 
-#==========================================
 #STATUS KELULUSAN
-#==========================================
 
 print("\n=== STATUS KELULUSAN PRAKTIKUM ===")
 
