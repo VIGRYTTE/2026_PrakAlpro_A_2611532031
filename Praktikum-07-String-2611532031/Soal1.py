@@ -3,6 +3,8 @@
 # Question 1
 
 
+# Soal1.py
+
 Name = "SULTAN"  # replace with your first name in capital letters
 print(Name[0])
 print(Name[-1])
